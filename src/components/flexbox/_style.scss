@@ -1,0 +1,50 @@
+// colors from colorhunt.co/c/37340    
+@import '../../variables';
+@import '../../global';
+.box-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  margin-top:2%;
+}
+
+
+.flex-box{
+  @extend .elevated-box;
+  transition:all 1s ease-in;
+  min-height: 46vh;
+  overflow:scroll;
+}
+
+
+.flex-item{
+  @extend .weightless;
+  transition:all 1s ease-in;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding:1rem;
+  margin:10px;
+  background-color:$colorC;
+  color:$colorD;
+  // width:20%;
+  // height:3rem;
+}
+
+.button-container{
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  margin-top:5%;
+}
+
+.fade-out{
+  height:20rem;
+  position:absolute;
+  left:0;right:0;
+  &-bottom{
+    background: linear-gradient(to top, $colorD, transparent);
+  }
+}

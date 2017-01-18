@@ -1,0 +1,12 @@
+select{
+    display:block !important;
+}
+.input-field label{
+    display:none;
+}
+label.default{
+    display: block;
+    position: relative;
+    top:auto;
+    left:auto;
+}

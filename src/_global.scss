@@ -1,0 +1,43 @@
+@import "stylesheets/materialize";
+@import "stylesheets/materialize_overrides";
+@import "variables";
+html{
+  height: 100%;
+}
+body{
+  background-image:url(https://source.unsplash.com/RRNbMiPmTZY/1600x900);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Share Tech Mono;
+}
+
+.btn-custom{
+  background-color:$colorC;
+}
+.page-container{
+  // height:100vh;
+  width:100vw;
+}
+.control-panel{
+  height:46vh;
+  width:100%;
+  background-color:$colorB;
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.weightless{
+  box-shadow:rgba(0,0,0,0.2) 0px 0px 15px;
+  border-radius:2px;
+}
+
+.elevated-box{
+  @extend .weightless;
+  width:66vw;
+  background-color:$colorD;
+  padding:10px;
+  padding-bottom:20px;
+}
