@@ -14,7 +14,7 @@
 <script>
 export default {
     name:"custom-select",
-    props:["value", "key"],
+    props:["value"],
     methods:{
         updateValue(value){
             this.$emit('input', value)

@@ -1,6 +1,29 @@
 // colors from colorhunt.co/c/37340    
 @import '../../variables';
 @import '../../global';
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+
 .box-container{
   display:flex;
   justify-content:center;
